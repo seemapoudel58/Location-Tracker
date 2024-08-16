@@ -14,7 +14,7 @@ function HomePage() {
 
   return (
     <div>
-      <h1>Tourist Navigation</h1>
+      <h1 className='bg-red-300'>Tourist Navigation</h1>
       <form onSubmit={handleSubmit}>
         <InputForm label="Start Location" value={start} onChange={setStart} />
         <InputForm label="Destination" value={destination} onChange={setDestination} />
