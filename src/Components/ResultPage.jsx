@@ -16,7 +16,7 @@ const busStopIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-const MapComponent = () => {
+const ResultPage = () => {
   const [route, setRoute] = useState([]);
   const [distance, setDistance] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -104,4 +104,4 @@ const MapComponent = () => {
   );
 };
 
-export default MapComponent;
+export default ResultPage;
