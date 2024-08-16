@@ -86,16 +86,16 @@ const ResultPage = () => {
 
            // Calculate fare
 const baseFare = 20; // Minimum fare for up to 5 km
-const farePerKm = 4;
+const farePerKm = 3.8;
 
 let calculatedFare;
 
-if (routeDistance <= 5) {
+if (routeDistance <= 5.25) {
     // If distance is 5 km or less, fare is Rs 20
     calculatedFare = baseFare;
 } else {
     // If distance is more than 5 km, calculate the extra fare
-    const extraDistance = routeDistance - 5;
+    const extraDistance = routeDistance - 5.25;
     calculatedFare = baseFare + (extraDistance * farePerKm);
 }
 
