@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import InputForm from "./InputForm";
 function HomePage() {
-  const [start, setStart] = useState("");
-  const [destination, setDestination] = useState("");
+  const [start, setStart] = useState('');
+  const [destination, setDestination] = useState('');
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,11 +18,7 @@ function HomePage() {
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <InputForm label="Start Location" value={start} onChange={setStart} />
-          <InputForm
-            label="Destination"
-            value={destination}
-            onChange={setDestination}
-          />
+          <InputForm label="Destination" value={destination} onChange={setDestination} />
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
