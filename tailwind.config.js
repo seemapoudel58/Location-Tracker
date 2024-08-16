@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {backgroundImage: {
+      "homepage-bg": "url('src/assets/bg.jpg')",
+    },
+    blur: {
+      md: "2px", // Custom blur level
+    },
+
+
+
+
+
+},
   },
   plugins: [],
 }
